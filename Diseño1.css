@@ -1,9 +1,8 @@
 :root {
-            /* Variables de color */
             --color-fondo: #f4f4f9; /* Gris muy claro/blanco roto */
             --color-principal: #333333; /* Negro/Gris oscuro para el texto principal */
             --color-secundario: #5c5c5c; /* Gris medio para texto menos importante */
-            --color-acento: #007bff; /* Azul vibrante para elementos interactivos */
+            --color-acento: #a30808; /* Azul vibrante para elementos interactivos */
             --color-linea: #dddddd; /* Gris claro para separadores */
         }
 
