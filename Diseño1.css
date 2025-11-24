@@ -1,0 +1,120 @@
+:root {
+            --color-fondo: #f4f4f9; /* Gris muy claro/blanco roto */
+            --color-principal: #333333; /* Negro/Gris oscuro para el texto principal */
+            --color-secundario: #5c5c5c; /* Gris medio para texto menos importante */
+            --color-acento: #a30808; /* Azul vibrante para elementos interactivos */
+            --color-linea: #dddddd; /* Gris claro para separadores */
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--color-fondo);
+            color: var(--color-principal);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex; /* Para centrar el contenido principal */
+            justify-content: center;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1000px;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* --- Encabezado y Navegación (Avanzado: Subrayado sutil) --- */
+        header {
+            border-bottom: 1px solid var(--color-linea);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--color-principal);
+            text-decoration: none;
+        }
+
+        nav a {
+            color: var(--color-secundario);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 400;
+            transition: color 0.3s ease; /* Transición sutil */
+        }
+
+        nav a:hover {
+            color: var(--color-acento);
+        }
+
+        /* --- Sección Principal (Simple: Mucho espacio en blanco) --- */
+        .seccion-principal h1 {
+            font-size: 3em;
+            font-weight: 300; /* Fuente ligera para un look minimalista */
+            margin-bottom: 10px;
+        }
+
+        .seccion-principal p {
+            font-size: 1.2em;
+            color: var(--color-secundario);
+            margin-bottom: 30px;
+        }
+
+        .boton-acento {
+            display: inline-block;
+            background-color: var(--color-acento);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 4px; /* Bordes ligeramente redondeados */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .boton-acento:hover {
+            background-color: #0056b3; /* Tono más oscuro al pasar el ratón */
+            transform: translateY(-2px); /* Efecto de elevación (avanzado) */
+        }
+
+        /* --- Grid de Características (Avanzado: Diseño modular) --- */
+        .caracteristicas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 1px solid var(--color-linea);
+        }
+
+        .caracteristica-item {
+            padding: 20px;
+            background-color: white; /* Contraste sutil */
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra muy suave para profundidad */
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .caracteristica-item:hover {
+             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .caracteristica-item h3 {
+            color: var(--color-acento);
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        /* --- Pie de Página --- */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+            border-top: 1px solid var(--color-linea);
+            font-size: 0.9em;
+            color: var(--color-secundario);
+        }
