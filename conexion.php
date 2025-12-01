@@ -2,10 +2,10 @@
 $servername = "localhost";
 $username = "root";     // tu usuario de MySQL
 $password = "";         // tu contraseña (si tienes)
-$dbname = "prueba";     // nombre de tu base de datos
+$dbname = "carro de luces";     // nombre de tu base de datos
 
 // Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($carro, $producto, $cantidad, $precio, $Material);
 
 // Verificar conexión
 if ($conn->connect_error) {
@@ -13,15 +13,19 @@ if ($conn->connect_error) {
 }
 
 // Recibir datos del formulario
-$nombre = $_POST['nombre'];
-$email = $_POST['email'];
-
+$nombre = $_POST['producto'];
+$precio = $_POST['precio'];
+$cantidad = $_POST['cantidad'];
 // Guardar en base de datos
-$sql = "INSERT INTO usuarios (nombre, email) VALUES ('$nombre', '$email')";
+$sql = "INSERT INTO usuarios (producto, precio, cantidad) VALUES ('$nombre', '$precio', '$cantida')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Datos guardados correctamente";
-} else {
+} else {<label>Nombre del Material</label>
+        <input type="text" name="producto" required>
+        <br><br>
+
+
     echo "Error: " . $conn->error;
 }
 
