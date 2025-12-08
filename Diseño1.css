@@ -50,7 +50,7 @@
         }
 
         nav a:hover {
-            color: var(--color-acento);
+            color: var(#a30808);
         }
 
         /* --- Sección Principal (Simple: Mucho espacio en blanco) --- */

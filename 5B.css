@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0a0a0a;
+    color: #f0e6ff;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(135deg, #5e0b8c, #d20bd2);
+    border-bottom: 4px solid #000;
+    border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ffe1ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+/* SECCIONES */
+
+main, .Procedimiento {
+    margin-top: 40px;
+}
+
+.narrativa, .procedimiento-item, .caracteristica-item {
+    background: #1b0725;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border: 2px solid #5e0b8c;
+    box-shadow: 0 0 15px #5e0b8c80;
+}
+
+.narrativa h2, .procedimiento-item h3, .caracteristica-item h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff6cff;
+    text-shadow: 1px 1px #000;
+}
+
+p {
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+/* IMÁGENES Y VIDEOS */
+
+img, video {
+    display: block;
+    margin: 20px auto;
+    max-width: 95%;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #d400ff;
+    box-shadow: 0 0 15px #d400ff80;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px #ff00ff;
+}
+
+/* Galerías de varias imágenes */
+
+.estruturas, .Preparación {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.estruturas img, .Preparación img {
+    max-height: 260px;
+    object-fit: cover;
+}
+
+video[src="imgs/limpieza.mp4"] {
+    width: 100px;
+    max-width: 80%;
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;
+    border: 3px solid #d400ff;
+    box-shadow: 0 0 15px #d400ff80;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 30px;
+    background: #5e0b8c;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    color: #ffe6ff;
+    border-top: 3px solid #d400ff;
+}
+
+footer article {
+    margin-top: 10px;
+    line-height: 1rem;
+    font-size: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}

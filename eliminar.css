@@ -1,0 +1,75 @@
+body {
+    background-color: #0a192f; 
+    color: #ffffff; 
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container {
+    background-color: rgba(16, 37, 60, 0.8); 
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+    max-width: 450px;
+    width: 100%;
+    text-align: center; 
+}
+.titulo-almacen {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #4a90e2; 
+    font-weight: bold;
+}
+.campo {
+    margin-bottom: 25px;
+    text-align: left;
+}
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #f0f8ff;
+}
+.campo input[type="text"],
+.campo input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #4a90e2;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #0a192f;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+.campo input[type="text"]:focus,
+.campo input[type="number"]:focus {
+    border-color: #7ab2f5;
+    outline: none;
+}
+.boton-eliminar {
+    background-color: #4a90e2; 
+    color: #ffffff; 
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s;
+    width: 100%;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+.boton-eliminar:hover {
+    background-color: #3b7ad6;
+}
+.boton-eliminar:active {
+    transform: scale(0.98);
+}

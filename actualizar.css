@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /* Importa una fuente moderna (Montserrat) */
+body {
+    background-color: #0d1a26; 
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.contenedor-principal {
+    background-color: #1a2a3a;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 350px;
+}
+.titulo-almacen {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #ce0982; 
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formulario label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.campo-texto {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #46017e, #610264, #b4006f, #910096, #960672, #ff00ff, #580343); 
+    border-image-slice: 1; 
+    background-color: #0d1a26; 
+    border-radius: 5px;
+    outline: none; 
+    transition: all 0.3s ease; 
+}
+
+.campo-texto:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 10px rgba(0, 0, 255, 0.7);
+}
+
+
+.boton-actualizar {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+
+    background-color: #99009e; 
+    color: #0d1a26;
+    border: none;
+    border-radius: 5px;
+
+    border: 3px solid transparent;
+    border-image: linear-gradient(45deg, #53035e, #9c0a70, #ff004cfa, #ff0000);
+    border-image-slice: 1;
+    
+    transition: all 0.3s ease;
+}
+.boton-actualizar:hover {
+    background-color: #9c0476;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+}

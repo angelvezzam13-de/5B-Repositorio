@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f9;
+    color: #020202;
+}
+
+
+header {
+    background: linear-gradient(45deg, #00ccff, #006eff);
+    color: white;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav a{
+    color: #6d6d6d;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease; /* Transición sutil */
+}
+
+nav a:hover {
+            color: #a50e0e;
+        }
+
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.narrativa h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #006eff;
+}
+
+.narrativa p {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+
+.ganadores {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.ganadores > div {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.ganadores > div:hover {
+    transform: scale(1.03);
+}
+
+.ganadores h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.ganadores img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 12px;
+    margin-top: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #8cc2cf;
+}
+
+footer a:hover{
+    color: #3700ff;
+    transition: color 0.8s ease;
+
+}

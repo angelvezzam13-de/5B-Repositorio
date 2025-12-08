@@ -1,0 +1,78 @@
+=============================================================
+  PROYECTO CARRO DE LUCES - SISTEMA DE GESTIÓN DE MATERIALES
+=============================================================
+
+REQUISITOS:
+-----------
+1. XAMPP instalado (Apache + MySQL/phpMyAdmin)
+2. Navegador web
+
+INSTRUCCIONES DE INSTALACIÓN:
+------------------------------
+
+PASO 1: Configurar la Base de Datos
+   a) Abre XAMPP Control Panel
+   b) Inicia "Apache" y "MySQL"
+   c) Abre tu navegador y ve a: http://localhost/phpmyadmin
+   d) Haz clic en "Importar" en el menú superior
+   e) Selecciona el archivo "database.sql" de este proyecto
+   f) Haz clic en "Continuar" para crear la base de datos automáticamente
+
+   ALTERNATIVA MANUAL:
+   - En phpMyAdmin, haz clic en "Nueva base de datos"
+   - Nombre: carro_de_luces
+   - Cotejamiento: utf8mb4_general_ci
+   - Luego crea la tabla "Material" con estos campos:
+     * id (INT, AUTO_INCREMENT, PRIMARY KEY)
+     * producto (VARCHAR 100)
+     * precio (DECIMAL 10,2)
+     * cantidad (INT)
+     * fecha_registro (TIMESTAMP, DEFAULT CURRENT_TIMESTAMP)
+
+PASO 2: Configurar los Archivos
+   a) Copia todos los archivos del proyecto a la carpeta:
+      C:\xampp\htdocs\carro_de_luces\
+
+   b) Si tu usuario de MySQL no es "root" o tiene contraseña,
+      edita el archivo "db_conexion.php" y cambia:
+      $usuario = "tu_usuario";
+      $contra = "tu_contraseña";
+
+PASO 3: Ejecutar el Proyecto
+   a) Asegúrate de que Apache y MySQL estén corriendo en XAMPP
+   b) Abre tu navegador y ve a:
+      http://localhost/carro_de_luces/index.html
+
+   c) Usa el menú principal para:
+      - Agregar materiales
+      - Actualizar materiales existentes
+      - Eliminar materiales
+
+ESTRUCTURA DE ARCHIVOS:
+-----------------------
+index.html          - Menú principal del sistema
+Formulario.html     - Formulario para agregar materiales
+insertar.php        - Procesa la inserción de materiales
+actualizar.php      - Actualiza materiales existentes
+eliminar.html       - Formulario para eliminar materiales
+eliminar.php        - Procesa la eliminación de materiales
+db_conexion.php     - Conexión a la base de datos
+database.sql        - Script para crear la BD
+formulario.css      - Estilos para formulario de inserción
+actualizar.css      - Estilos para actualización
+eliminar.css        - Estilos para eliminación
+
+SOLUCIÓN DE PROBLEMAS:
+----------------------
+- Si aparece error de conexión: Verifica que MySQL esté corriendo
+- Si no carga la página: Verifica que Apache esté corriendo
+- Si dice "tabla no existe": Ejecuta el archivo database.sql
+- Si aparece error 404: Verifica la ruta en el navegador
+
+CARACTERÍSTICAS DE SEGURIDAD:
+-----------------------------
+- Consultas preparadas (prepared statements) para evitar SQL injection
+- Validación de datos en formularios
+- Escape de HTML para prevenir XSS
+
+=============================================================
